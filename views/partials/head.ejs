@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+        <!-- app icon -->
+        <link rel="apple-touch-icon" type="image/png" href="/images/iOS.png">
+        <!-- design system -->
+        <link rel="stylesheet" type="text/css" href="/stylesheets/design-system.css">
+        <!-- master stylesheet -->
+        <link rel="stylesheet" type="text/css" href="/stylesheets/master.css">
+
+        <!-- animate on scroll -->
+        <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+        <script src="node_modules/aos/dist/aos.js"></script> 
+        <script>
+        import AOS from 'aos';
+        import 'aos/dist/aos.css';
+        AOS.init();
+        </script>
+
+        <!-- scroll top -->
+        <script>
+        $(document).ready(function(){ 
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 100) { 
+                    $('#scroll').fadeIn();
+                } else { 
+                    $('#scroll').fadeOut(); 
+                } 
+            }); 
+            $('#scroll').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+                return false;
+            }); 
+        });
+        </script>

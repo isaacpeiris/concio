@@ -1,0 +1,240 @@
+/* hero */
+
+#hero {
+    min-height: 100vh;
+}
+
+.hero-inner {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#hero h1 {
+    margin-top: 8%;
+}
+
+/* services */
+
+#home-services {
+    text-align: center;
+    color: var(--charcoal);
+}
+
+.service-content {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.service-content img, .service-content .profile-container {
+    width: 12vw;
+    height: 12vw;
+    max-width: 320px;
+    max-height: 320px;
+}
+
+@media screen and (max-width: 720px) {
+    .service-content img, .service-content .profile-container {
+        width: 60vw;
+        height: 60vw;
+    }
+    .service-content {
+        display: block;
+    }
+    .service-container {
+        margin: auto;
+        margin-bottom: 12%;
+    }
+}
+
+.service-container {
+    margin-top: 3rem;
+}
+
+.service-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.service-content .label {
+    font-size: 2.618rem;
+    margin-top: 3rem;
+}
+
+#home-services .button {
+    display: inline-block;
+    background: transparent;
+    border-width: 2px;
+    border-color: var(--charcoal);
+    border-style: solid;
+    border-radius: 300px;
+    padding: 0 1.618rem;
+    color: var(--charcoal);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+#home-services .button h3 {
+    margin: 1.618rem;
+}
+
+#home-services .button:hover {
+    transform: scale(1.1);
+    background: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+    -webkit-filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
+}
+
+#home-services .inner > .content > .inner {
+    padding-bottom: 0;
+}
+
+/* get in touch */
+
+#contact {
+    background: var(--yellow);
+}
+
+#contact .inner {
+    padding: 48px 0;
+    text-align: center;
+}
+
+#contact .button {
+    display: inline-block;
+    background: transparent;
+    border-width: 2px;
+    border-color: var(--charcoal);
+    border-style: solid;
+    border-radius: 300px;
+    padding: 0 48px;
+    color: var(--charcoal);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+#contact .button:hover {
+    transform: scale(1.1);
+    background: var(--white);
+    border-color: var(--white);
+    color: var(--blue);
+    -webkit-filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
+}
+
+/* about us */
+
+#home-about .inner {
+    color: var(--charcoal);
+}
+
+.about-text {
+    width: 72%;
+    display: block;
+    margin: auto;
+    padding: 1em 0 1em 0;
+}
+
+#home-about .inner h1 {
+    text-align: center;
+}
+
+.team {
+    text-align: center;
+}
+
+.team-content {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.team-content a {
+    border-radius: 50%;
+}
+
+.team-content img {
+            filter: grayscale(100);
+    -webkit-filter: grayscale(100);
+    transition: all .4s ease;
+}
+
+.team-content img, .team-content .overlay, .team-content .profile-container {
+    width: 16vw;
+    height: 16vw;
+    max-width: 320px;
+    max-height: 320px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 720px) {
+    .team-content img, .team-content .overlay, .team-content .profile-container {
+        width: 60vw;
+        height: 60vw;
+    }
+    .team-content {
+        display: block;
+    }
+    .profile-container {
+        margin: auto;
+        margin-bottom: 12%;
+    }
+}
+
+.profile-container {
+    position: relative;
+    width: 50%;
+}
+
+.profile-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .4s ease;
+    background-color: var(--blue);
+}
+
+.profile-container:hover .overlay {
+    opacity: 0.8;
+}
+
+
+.text {
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay .text h3 {
+    margin: 1rem;
+}
+
+.overlay .text svg#linkedin {
+    height: 24px;
+    fill: #ffffff;
+    transition: all .2s ease;
+}
+
+.overlay .text svg#linkedin:hover {
+    transform: scale(1.2);
+}

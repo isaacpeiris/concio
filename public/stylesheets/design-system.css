@@ -1,0 +1,224 @@
+/* CONTENTS
+* Colour
+* Layout
+* Typography
+*/
+
+/* ====== */
+/* COLOUR */
+/* ====== */
+
+:root {
+    --light-blue: #05b2dc;
+    --blue: #087ca7;
+    --dark-blue: #033860;
+    --yellow: #ffdc00;
+    --charcoal: #303030;
+    --ash: #f0f0f0;
+    --white: #ffffff;
+    --facebook: #3b5998;
+    --instagram: #bc2a8d;
+    --linkedin: #007bb5;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* ====== */
+/* LAYOUT */
+/* ====== */
+
+/* root */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+}
+
+hr {
+    width: 80%;
+    height: 1px;
+    background-color: var(--charcoal);
+    border: none;
+    margin: 1.618rem auto 1.618rem auto;
+}
+
+.spacer {
+    height: 48px;
+}
+
+/* structure */
+section {
+    margin: 4% 0 4% 0;
+}
+
+.container {
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+@media screen and (max-width: 720px) {
+    .container {
+        width: 96%;
+    }
+}
+
+.inner {
+    padding: 48px;
+}
+
+.content {
+    
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-inner {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.flex-item {
+    flex: 1 0 0;
+}
+
+/* ========== */
+/* TYPOGRAPHY */
+/* ========== */
+
+/* fonts */
+@font-face {
+    src: url(/fonts/cera-pro/Cera-Pro-Regular.otf);
+    font-family: cera pro;
+    font-weight: normal;
+}
+
+@font-face {
+    src: url(/fonts/cera-pro/Cera-Pro-Bold.otf);
+    font-family: cera pro;
+    font-weight: bold;
+}
+
+@font-face {
+    src: url(/fonts/cera-pro/Cera-Pro-Bold-Italic.otf);
+    font-family: cera pro;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    src: url(/fonts/cera-pro/Cera-Pro-Black.otf);
+    font-family: cera pro;
+    font-weight: bolder;
+}
+
+/* styling */
+
+h1 {
+    font-family: cera pro;
+    font-weight: bold;
+    font-size: 6.854rem;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 0em;
+    line-height: 1.2em;
+    margin-top: 0;
+}
+
+h2 {
+    font-family: cera pro;
+    font-weight: bold;
+    font-size: 4.236rem;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+}
+
+h3 {
+    font-family: cera pro;
+    font-weight: bold;
+    font-size: 2.618rem;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 0em;
+    line-height: 1.2em;
+}
+
+p, a, li, .value, .label{
+    font-family: cera pro;
+    font-weight: normal;
+    font-size: 1.618rem;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: .02rem;
+    line-height: 1.6em;
+}
+
+.label {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 1.618rem;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: .02rem;
+    line-height: 1.6em;
+    padding: 1rem;
+    color: var(--charcoal);
+    background: var(--ash);
+    border-radius: 1rem;
+    white-space: nowrap;
+    margin: 1rem;
+}

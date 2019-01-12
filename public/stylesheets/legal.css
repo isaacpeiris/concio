@@ -1,0 +1,45 @@
+/* header */
+
+.header-nav ul li a {
+    color: var(--dark);
+}
+
+.header-nav ul li a:hover {
+    color: var(--blue);
+}
+
+.dropdown li a {
+    color: var(--dark) !important;
+}
+
+.dropdown li a:hover {
+    color: var(--blue) !important;
+}
+
+svg#logo {
+    fill: var(--dark);
+}
+
+svg#logo:hover {
+    fill: var(--blue);
+}
+
+/* content */
+
+section {
+    min-height: 82vh;
+    margin: 0;
+}
+
+.content {
+    margin-top: 70px;
+}
+
+.content h1 {
+    text-align: center;
+    margin-bottom: 0.1rem;
+}
+
+.content a {
+    color: var(--blue);
+}

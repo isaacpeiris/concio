@@ -1,11 +1,137 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<!-- include head -->
+<% include ./partials/head %>
+
+    <link type="text/css" rel="stylesheet" href="/stylesheets/index.css">
+    <title>Concio Group</title>
+    <meta name="description" content="">
+</head>
+<body>
+
+<% include ./partials/nav %>
+
+<main>
+
+<section id="hero">
+    <div class="hero-inner">
+        <div class="hero-content">
+            <h1 data-aos="fade-up">A new perspective.</h1>
+            <p data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom">We are a creative intelligence agency creating positive change through innovation.</p>
+        </div>
+    </div>
+</section>
+
+<section id="home-services">
+    <div class="container">
+        <div class="inner">
+            <div class="content">
+                <h1 data-aos="fade-up">Services</h1>
+                <hr data-aos="fade-up">
+                <div class="service-content">
+                    <div class="service-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="/images/svg/shifting-perspectives.svg" alt="Shifting Perspectives" class="service-image">
+                        <div class="label">shifting perspectives</div>
+                    </div>
+                    <div class="service-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="/images/svg/design-sprint.svg" alt="Design Sprint" class="service-image">
+                        <div class="label">design sprint</div>
+                    </div>
+                    <div class="service-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="/images/svg/strategic-innovation.svg" alt="Solution Design" class="service-image">
+                        <div class="label">strategic innovation</div>
+                    </div>
+                    <div class="service-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="/images/svg/solution-design.svg" alt="Solution Design" class="service-image">
+                        <div class="label">solution design</div>
+                    </div>
+                </div>
+                <div class="inner" data-aos="fade-up">
+                    <a href="pages/services.html">
+                        <div class="button">
+                            <h3>Learn More</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="inner" data-aos="fade-up">
+        <a href="pages/contact.html">
+            <div class="button">
+                <h3>Get in Touch</h3>
+            </div>
+        </a>
+    </div>
+</section>
+
+<section id="home-about">
+    <div class="container">
+        <div class="inner">
+            <div class="content">
+                <h1 data-aos="fade-up">About Us</h1>
+                <hr data-aos="fade-up">
+                <div class="about-text">
+                    <p data-aos="fade-up">Founded in 2017 on the principle of <b>pursuing positive impact</b>, Concio facilitates new and exciting opportunities for organisations and teams through innovation methodologies. Concio can help you <b>access untapped creative potential</b> and overcome blocks in creative processes with higher engagement and lower costs than alternative methods. We achieve this through the energy of our young team, fuelled by the passion that drives us to help organisations <b>innovate and solve problems.</b></p>
+                    <p data-aos="fade-up">Currently we are achieving this vision through our various workshops which we are proud to have delivered to such a <b>broad variety of clients</b>, from a UN-affiliated legal services firm to one of the largest hotel groups in the world to a local University medical research team. We look forward to continuing to work with new and existing clients across such a diversity of industries.</p>
+                    <p data-aos="fade-up">This means we are able to offer ideation workshops that bring with them a <b>depth of experience</b> in innovation practices without having to compromise on the integral breadth of experiences and ideas.</p>
+                    <p data-aos="fade-up">You’re the expert of your field, we’re the experts in change.</p>
+                    <p data-aos="fade-up">Bring the two together and lets create what comes next.</p>
+                </div>
+                <div class="team-content">
+                    <div class="profile-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="/images/profiles/emma.png" alt="Emma McCulloch" class="profile-image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Emma McCulloch</h3>
+                                <a href="https://www.linkedin.com/in/em-mcculloch/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 47.78" id="linkedin"><title>linkedin</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M50,29.29V47.78H39.28V30.53c0-4.33-1.55-7.29-5.43-7.29a5.84,5.84,0,0,0-5.49,3.92A7.17,7.17,0,0,0,28,29.77v18H17.28s.14-29.21,0-32.24H28v4.57l-.07.1H28v-.1a10.65,10.65,0,0,1,9.66-5.33C44.71,14.78,50,19.39,50,29.29ZM6.07,0C2.4,0,0,2.41,0,5.57a5.55,5.55,0,0,0,5.92,5.57H6c3.73,0,6.06-2.48,6.06-5.57S9.73,0,6.07,0ZM.64,47.78H11.35V15.54H.64Z"/></g></g></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="/images/profiles/isaac.jpg" alt="Isaac Peiris" class="profile-image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Isaac Peiris</h3>
+                                <a href="https://www.linkedin.com/in/isaac-peiris/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 47.78" id="linkedin"><title>linkedin</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M50,29.29V47.78H39.28V30.53c0-4.33-1.55-7.29-5.43-7.29a5.84,5.84,0,0,0-5.49,3.92A7.17,7.17,0,0,0,28,29.77v18H17.28s.14-29.21,0-32.24H28v4.57l-.07.1H28v-.1a10.65,10.65,0,0,1,9.66-5.33C44.71,14.78,50,19.39,50,29.29ZM6.07,0C2.4,0,0,2.41,0,5.57a5.55,5.55,0,0,0,5.92,5.57H6c3.73,0,6.06-2.48,6.06-5.57S9.73,0,6.07,0ZM.64,47.78H11.35V15.54H.64Z"/></g></g></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="/images/profiles/lucy.jpeg" alt="Lucy Southwick" class="profile-image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Lucy Southwick</h3>
+                                <a href="https://www.linkedin.com/in/lucy-southwick-aa5946116/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 47.78" id="linkedin"><title>linkedin</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M50,29.29V47.78H39.28V30.53c0-4.33-1.55-7.29-5.43-7.29a5.84,5.84,0,0,0-5.49,3.92A7.17,7.17,0,0,0,28,29.77v18H17.28s.14-29.21,0-32.24H28v4.57l-.07.1H28v-.1a10.65,10.65,0,0,1,9.66-5.33C44.71,14.78,50,19.39,50,29.29ZM6.07,0C2.4,0,0,2.41,0,5.57a5.55,5.55,0,0,0,5.92,5.57H6c3.73,0,6.06-2.48,6.06-5.57S9.73,0,6.07,0ZM.64,47.78H11.35V15.54H.64Z"/></g></g></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="/images/profiles/remy.jpeg" alt="Remy Webb" class="profile-image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Remy Webb</h3>
+                                <a href="https://www.linkedin.com/in/remy-webb-084b9a11a/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 47.78" id="linkedin"><title>linkedin</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M50,29.29V47.78H39.28V30.53c0-4.33-1.55-7.29-5.43-7.29a5.84,5.84,0,0,0-5.49,3.92A7.17,7.17,0,0,0,28,29.77v18H17.28s.14-29.21,0-32.24H28v4.57l-.07.1H28v-.1a10.65,10.65,0,0,1,9.66-5.33C44.71,14.78,50,19.39,50,29.29ZM6.07,0C2.4,0,0,2.41,0,5.57a5.55,5.55,0,0,0,5.92,5.57H6c3.73,0,6.06-2.48,6.06-5.57S9.73,0,6.07,0ZM.64,47.78H11.35V15.54H.64Z"/></g></g></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<% include ./partials/footer %>
+
+<% include ./partials/scripts %>

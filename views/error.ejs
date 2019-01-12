@@ -1,3 +1,26 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<% include ./partials/head %>
+
+    <link type="text/css" rel="stylesheet" href="/stylesheets/error.css">
+    <title>Error</title>
+    <!-- <meta name="description" content=""> -->
+</head>
+<body>
+
+<% include ./partials/nav %>
+
+<main>
+
+<section id="hero">
+    <div class="hero-inner">
+        <div class="hero-content">
+            <h1>Error <%= error.status %></h1>
+            <h2><%= message %></h2>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<% include ./partials/footer %>
+
+<% include ./partials/scripts %>
