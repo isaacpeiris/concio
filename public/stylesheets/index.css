@@ -5,7 +5,7 @@
 }
 
 .hero-inner {
-    top: 50%;
+    top: calc(50vh - 70px);
     transform: translateY(-50%);
 }
 
