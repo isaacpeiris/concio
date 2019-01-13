@@ -5,7 +5,7 @@
 }
 
 .hero-inner {
-    top: calc(50vh - 70px);
+    top: 50vh;
     transform: translateY(-50%);
 }
 
@@ -180,9 +180,8 @@
     .team-content {
         display: block;
     }
-    .profile-container {
-        margin: auto;
-        margin-bottom: 12%;
+    .team-content .profile-container {
+        margin: 6% auto;
     }
 }
 

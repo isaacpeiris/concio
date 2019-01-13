@@ -31,7 +31,6 @@ span.mobile-nav {
 /* hero */
 
 #hero {
-    min-height: 40vh;
     background: none;
 }
 
@@ -48,8 +47,7 @@ span.mobile-nav {
 #hero div#concio {
     text-transform: uppercase;
     display: inline;
-    font-family: cera pro;
-    font-weight: bolder;
+    font-family: cera pro dark;
     font-size: 8.4rem;
     margin-left: 1rem;
     background: -webkit-linear-gradient(-45deg, var(--light-blue), var(--blue), var(--dark-blue));
@@ -109,8 +107,7 @@ span.mobile-nav {
         display: block;
     }
     #team .profile-container {
-        margin: auto;
-        margin-bottom: 12%;
+        margin: 6% auto;
     }
 }
 

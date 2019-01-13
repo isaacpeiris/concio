@@ -150,8 +150,7 @@ section {
 
 @font-face {
     src: url(/fonts/cera-pro/Cera-Pro-Black.otf);
-    font-family: cera pro;
-    font-weight: bolder;
+    font-family: cera pro dark;
 }
 
 /* styling */
