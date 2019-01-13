@@ -96,6 +96,7 @@ span.mobile-nav {
     max-width: 320px;
     max-height: 320px;
     border-radius: 50%;
+    margin: 0 2%;
 }
 
 @media screen and (max-width: 720px) {
