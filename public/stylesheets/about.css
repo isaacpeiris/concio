@@ -106,7 +106,7 @@ span.mobile-nav {
     .team-content {
         display: block;
     }
-    .profile-container {
+    #team .profile-container {
         margin: auto;
         margin-bottom: 12%;
     }
