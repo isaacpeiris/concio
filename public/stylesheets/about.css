@@ -64,6 +64,7 @@ span.mobile-nav {
 @media screen and (max-width: 720px) {
     #hero div#concio {
         display: block;
+        padding: 10px 0;
     }
 }
 

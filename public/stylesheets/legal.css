@@ -24,6 +24,10 @@ svg#logo:hover {
     fill: var(--blue);
 }
 
+span.mobile-nav {
+    color: var(--dark) !important;
+}
+
 /* content */
 
 section {
