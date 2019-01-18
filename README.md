@@ -10,10 +10,10 @@ This README would normally document whatever steps are necessary to get your app
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
+* Enter repository `$ cd concio-webpage`
+* Install dependencies `$ npm install`
+* Run server `$ npm start`
+* Launch browser and run [localhost:3000](http://localhost:3000/)
 * How to run tests
 * Deployment instructions
 
@@ -25,5 +25,4 @@ This README would normally document whatever steps are necessary to get your app
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* Isaac Peiris - isaac.peiris@concio.group

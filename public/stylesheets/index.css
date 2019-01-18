@@ -97,11 +97,13 @@
 
 #contact {
     background: var(--yellow);
+    transform: skewY(-12deg);
 }
 
 #contact .inner {
     padding: 48px 0;
     text-align: center;
+    transform: skewY(12deg);
 }
 
 #contact .button {
