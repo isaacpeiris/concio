@@ -1,29 +1,42 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+// index
+
 router.get('/', function(req, res, next) {
-  res.render('index');
+  res.render('index', { title: 'Concio Group' });
 });
 
+// pages
+
 router.get('/about', function(req, res, next) {
-  res.render('pages/about');
+  res.render('pages/about', { title: 'Concio Group | About Us' });
 });
 
 router.get('/services', function(req, res, next) {
-  res.render('pages/services');
+  res.render('pages/services', { title: 'Concio Group | Services' });
 });
 
 router.get('/contact', function(req, res, next) {
-  res.render('pages/contact');
+  res.render('pages/contact', { title: 'Concio Group | Contact Us' });
 });
 
 router.get('/terms', function(req, res, next) {
-  res.render('pages/terms');
+  res.render('pages/terms', { title: 'Concio Group | Terms' });
 });
 
 router.get('/privacy', function(req, res, next) {
-  res.render('pages/privacy');
+  res.render('pages/privacy', { title: 'Concio Group | Privacy' });
+});
+
+router.get('/hackathon', function(req, res, next) {
+  res.render('pages/hackathon', { title: 'Concio Group | Hackathon' });
+});
+
+// other
+
+router.get('/login', function(req, res, next) {
+  res.render('pages/login', { title: 'Concio Group | Login' });
 });
 
 module.exports = router;
