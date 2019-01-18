@@ -8,7 +8,7 @@
 
 function TheLogin() {
 
-var password = 'pepper';
+var password = 'concio';
 
 if (this.document.login.pass.value == password) {
     top.location.href="/hackathon";
@@ -17,7 +17,6 @@ else {
     window.alert("Incorrect password, please try again.");
     }
 }
-
 </script>
 
 </head>
@@ -31,9 +30,9 @@ else {
     <div class="hero-inner">
         <div class="login-form">
             <form name="login">
-                <input class="input" type="text" name="pass" size="17" onkeydown="if(event.keyCode==13) return false;" style="width: 130px;">
+                <input id="input" type="text" name="pass" placeholder="Password" onkeydown="if(event.keyCode==13) return false;">
                 <br>
-                <input class="button" type="button" value="Click to Login" style="width: 134px; margin: 4px auto 4px auto;" onclick="javascript:TheLogin(this.form)">
+                <input id="submit" type="button" value="Submit" onclick="javascript:TheLogin(this.form)">
             </form>
         </div>
     </div>

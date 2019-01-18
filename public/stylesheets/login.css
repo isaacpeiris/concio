@@ -12,10 +12,31 @@
     margin: auto;
 }
 
-.input {
-
+input[type="text"] {
+    width: 200px;
+    border: none;
+    outline: none;
+    font-size: 1.618rem;
+    padding: 0.618rem;
+    font-family: cera pro;
 }
 
-.button {
-    
+input[type="button"] {
+    margin: 20px auto;
+    width: 200px;
+    border: 1px solid var(--white);
+    background-color: transparent;
+    font-family: cera pro;
+    color: var(--white);
+    outline: none;
+    font-size: 1.618rem;
+    padding: 0.618rem;
+    border-radius: 4px;
+    transition: background-color .4s ease;
+}
+
+input[type="button"]:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--blue);
 }
