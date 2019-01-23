@@ -1,7 +1,9 @@
 <% include ../partials/head %>
 
     <link type="text/css" rel="stylesheet" href="/stylesheets/contact.css">
+    <script type="text/javascript" src="/javascripts/contact.js"></script>
     <!-- <meta name="description" content=""> -->
+    
 </head>
 <body>
 
@@ -17,10 +19,27 @@
     </div>
 </section>
 
-<section id="contact">
+<section>
     <div class="container">
         <div class="inner">
-            <iframe class="contact-form" data-aos="fade-up" src="https://docs.google.com/forms/d/e/1FAIpQLSf_GDN6vOLNjLnoyr7t1z6TrOvfwMdPGDx1yATROU0Tr86odw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            <form id="contactForm" method="POST">
+                <div class="form-content container">
+                    <!-- <label for="firstname">First Name</label> -->
+                    <input type="text" placeholder="First Name" name="firstname">
+                    <!-- <label for="lastname">Last Name</label> -->
+                    <input type="text" placeholder="Last Name" name="lastname">
+                    <!-- <label for="company">company</label> -->
+                    <input type="text" placeholder="Company" name="company">
+                    <!-- <label for="number">phone</label> -->
+                    <input type="number" placeholder="Phone" name="phone">
+                    <!-- <label for="email">Email</label> -->
+                    <input type="text" placeholder="Email" name="email">
+
+                    <button type="submit" class="submit"><p>Submit</p></button>
+
+                    <p>By submitting this form you agree to our <a href="/terms">Terms & Conditions</a> & <a href="/privacy">Privacy Policy</a>.</p>
+                </div>
+            </form>
         </div>
     </div>
 </section>

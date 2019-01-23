@@ -51,7 +51,6 @@
     box-sizing: border-box;
     position: absolute;
     background: transparent;
-    z-index: 1000;
     width: 100%;
 }
 

@@ -76,7 +76,7 @@ hr {
     height: 1px;
     background-color: var(--charcoal);
     border: none;
-    margin: 1.618rem auto 1.618rem auto;
+    margin: 4rem auto 4rem auto;
 }
 
 .spacer {
@@ -189,7 +189,7 @@ h3 {
     line-height: 1.2em;
 }
 
-p, a, li, .value, .label{
+p, a, li, .value, input, .label, label{
     font-family: cera pro;
     font-weight: normal;
     font-size: 1.618rem;
@@ -200,9 +200,17 @@ p, a, li, .value, .label{
     line-height: 1.6em;
 }
 
-.label {
+.label, label {
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+a {
+    color: var(--blue);
+}
+
+a:hover {
+    text-decoration-line: underline;
 }
 
 .code {

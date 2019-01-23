@@ -39,4 +39,8 @@ router.get('/login', function(req, res, next) {
   res.render('pages/login', { title: 'Concio Group | Login' });
 });
 
+router.get('/toolkit', function(req, res, next) {
+  res.render('pages/toolkit', { title: 'Concio Group | Toolkit' });
+});
+
 module.exports = router;
