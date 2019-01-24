@@ -97,13 +97,11 @@
 
 #contact {
     background: var(--yellow);
-    transform: skewY(-12deg);
 }
 
 #contact .inner {
     padding: 48px 0;
     text-align: center;
-    transform: skewY(12deg);
 }
 
 #contact .button {
@@ -211,7 +209,7 @@
     background-color: var(--blue);
 }
 
-.profile-container:hover .overlay {
+.profile-container:hover .overlay, .profile-container:focus .overlay, .profile-container:active .overlay {
     opacity: 0.8;
 }
 

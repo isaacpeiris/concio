@@ -64,7 +64,7 @@ router.post('/', (req, res) => {
         });
 
 
-    res.redirect('/contact');
+    res.redirect('/thankyou');
 });
 
 module.exports = router;

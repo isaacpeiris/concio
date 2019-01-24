@@ -135,7 +135,7 @@ span.mobile-nav {
     background-color: var(--blue);
 }
 
-.profile-container:hover .overlay {
+.profile-container:hover .overlay, .profile-container:focus .overlay, .profile-container:active .overlay {
     opacity: 0.8;
 }
 
