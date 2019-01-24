@@ -8,10 +8,13 @@
 
 function TheLogin() {
 
-var password = 'concio';
+var mentalhealth = 'mentalhealth';
+var genderequality = 'genderequality';
 
-if (this.document.login.pass.value == password) {
-    top.location.href="/hackathon";
+if (this.document.login.pass.value == mentalhealth) {
+    top.location.href="/mentalhealth";
+} else if (this.document.login.pass.value == genderequality) {
+    top.location.href="/genderequality";
 }
 else {
     window.alert("Incorrect password, please try again.");

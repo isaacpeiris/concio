@@ -29,8 +29,14 @@ router.get('/privacy', function(req, res, next) {
   res.render('pages/privacy', { title: 'Concio Group | Privacy' });
 });
 
-router.get('/hackathon', function(req, res, next) {
-  res.render('pages/hackathon', { title: 'Concio Group | Hackathon' });
+// passion projects
+
+router.get('/mentalhealth', function(req, res, next) {
+  res.render('pages/passionprojects/mentalhealth', { title: 'Concio Group | Mental Health' });
+});
+
+router.get('/genderequality', function(req, res, next) {
+  res.render('pages/passionprojects/genderequality', { title: 'Concio Group | Gender Equality' });
 });
 
 // other

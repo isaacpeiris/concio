@@ -144,6 +144,17 @@ svg#logo:hover {
     top: 20px;
 }
 
+nav a.login {
+    border: 1px solid white;
+    border-radius: 320px;
+    padding: 12px 18px;
+}
+
+nav a.login:hover {
+    background: white;
+    color: var(--blue) !important;
+}
+
 @media screen and (max-width: 700px) {
     .header-nav {
         display: none !important;
@@ -191,7 +202,7 @@ svg#logo:hover {
 }
   
 .mobile-sidenav a:hover {
-    color: #f1f1f1;
+    color: var(--light-blue);
 }
   
 .mobile-sidenav .closebtn {
@@ -313,6 +324,10 @@ svg#logo:hover {
     h1 {
         font-size: 4.236rem;
     }
+}
+
+section.second {
+    min-height: calc(60vh - 248.34px);
 }
 
 /* ADAPTATIONS */
