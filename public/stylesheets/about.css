@@ -1,7 +1,7 @@
 /* header */
 
 .header-nav ul li a {
-    color: var(--dark);
+    color: var(--charcoal);
 }
 
 .header-nav ul li a:hover {
@@ -9,7 +9,7 @@
 }
 
 .dropdown li a {
-    color: var(--dark) !important;
+    color: var(--charcoal) !important;
 }
 
 .dropdown li a:hover {
@@ -17,7 +17,7 @@
 }
 
 svg#logo {
-    fill: var(--dark);
+    fill: var(--charcoal);
 }
 
 svg#logo:hover {
@@ -25,7 +25,7 @@ svg#logo:hover {
 }
 
 span.mobile-nav {
-    color: var(--dark) !important;
+    color: var(--charcoal) !important;
 }
 
 /* hero */
@@ -40,15 +40,13 @@ span.mobile-nav {
 }
 
 #hero h1 {
-    display: inline;
     text-transform: none;
 }
 
-#hero div#concio {
+#hero span#concio {
+    font-size: calc(3.052rem * 1.25);
+    font-weight: 900;
     text-transform: uppercase;
-    display: inline;
-    font-family: cera pro dark;
-    font-size: 8.4rem;
     margin-left: 1rem;
     background: -webkit-linear-gradient(-45deg, var(--light-blue), var(--blue), var(--dark-blue));
     background-size: 600% 600%;
@@ -60,18 +58,14 @@ span.mobile-nav {
     -webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width: 720px) {
+/* @media screen and (max-width: 720px) {
     #hero div#concio {
         display: block;
         padding: 10px 0;
     }
-}
+} */
 
 /* team */
-
-.team-inner {
-    color: var(--dark);
-}
 
 .team-content {
     display: flex;
@@ -163,7 +157,6 @@ span.mobile-nav {
 /* text */
 
 .about-inner {
-    color: var(--dark);
     padding-top: 0px;
 }
 

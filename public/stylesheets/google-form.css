@@ -21,12 +21,6 @@
     color: var(--white);
 }
 
-@media screen and (max-width: 720px) {
-    .hero-content h1 {
-        font-size: 4.236rem;
-    }
-}
-
 /* contact */
 
 #contact {

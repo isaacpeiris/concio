@@ -16,7 +16,7 @@ input[type="text"] {
     width: 200px;
     border: none;
     outline: none;
-    font-size: 1.618rem;
+    font-size: 1rem;
     padding: 0.618rem;
     font-family: cera pro;
 }
@@ -29,7 +29,7 @@ input[type="button"] {
     font-family: cera pro;
     color: var(--white);
     outline: none;
-    font-size: 1.618rem;
+    font-size: 1rem;
     padding: 0.618rem;
     border-radius: 4px;
     transition: background-color .4s ease;

@@ -13,6 +13,10 @@
     margin-top: 8%;
 }
 
+#hero h4 {
+    text-transform: none;
+}
+
 /* services */
 
 #home-services {
@@ -59,38 +63,7 @@
 }
 
 .service-content .label {
-    font-size: 2.618rem;
     margin-top: 3rem;
-}
-
-#home-services .button {
-    display: inline-block;
-    background: transparent;
-    border-width: 2px;
-    border-color: var(--charcoal);
-    border-style: solid;
-    border-radius: 300px;
-    padding: 0 1.618rem;
-    color: var(--charcoal);
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-}
-
-#home-services .button h3 {
-    margin: 1.618rem;
-}
-
-#home-services .button:hover {
-    transform: scale(1.1);
-    background: var(--blue);
-    border-color: var(--blue);
-    color: var(--white);
-    -webkit-filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
-}
-
-#home-services .inner > .content > .inner {
-    padding-bottom: 0;
 }
 
 /* get in touch */
@@ -102,28 +75,6 @@
 #contact .inner {
     padding: 48px 0;
     text-align: center;
-}
-
-#contact .button {
-    display: inline-block;
-    background: transparent;
-    border-width: 2px;
-    border-color: var(--charcoal);
-    border-style: solid;
-    border-radius: 300px;
-    padding: 0 48px;
-    color: var(--charcoal);
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-}
-
-#contact .button:hover {
-    transform: scale(1.1);
-    background: var(--white);
-    border-color: var(--white);
-    color: var(--blue);
-    -webkit-filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
 }
 
 /* about us */

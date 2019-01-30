@@ -2,6 +2,7 @@
 * Colour
 * Layout
 * Typography
+* Components
 */
 
 /* ====== */
@@ -62,10 +63,6 @@
 /* ====== */
 
 /* root */
-html {
-    font-size: 62.5%;
-}
-
 body {
     margin: 0px;
     height: 100%;
@@ -76,7 +73,7 @@ hr {
     height: 1px;
     background-color: var(--charcoal);
     border: none;
-    margin: 4rem auto 4rem auto;
+    margin: 1.618rem auto 1.618rem auto;
 }
 
 .spacer {
@@ -131,78 +128,88 @@ section {
 /* fonts */
 @font-face {
     src: url(/fonts/cera-pro/Cera-Pro-Regular.otf);
-    font-family: cera pro;
+    font-family: "Cera Pro";
     font-weight: normal;
 }
 
 @font-face {
     src: url(/fonts/cera-pro/Cera-Pro-Bold.otf);
-    font-family: cera pro;
+    font-family: "Cera Pro";
     font-weight: bold;
 }
 
 @font-face {
     src: url(/fonts/cera-pro/Cera-Pro-Bold-Italic.otf);
-    font-family: cera pro;
+    font-family: "Cera Pro";
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     src: url(/fonts/cera-pro/Cera-Pro-Black.otf);
-    font-family: cera pro dark;
+    font-family: "Cera Pro";
+    font-weight: 900;
 }
 
 /* styling */
+body {
+    font-family: "Cera Pro", "Montserrat", sans-serif;
+    line-height: 1.2em;
+    color: var(--charcoal);
+}
+
+p {margin-bottom: 1.25em;}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+  line-height: 1.15;
+}
 
 h1 {
-    font-family: cera pro;
-    font-weight: bold;
-    font-size: 6.854rem;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: capitalize;
-    letter-spacing: 0em;
-    line-height: 1.2em;
-    margin-top: 0;
+  margin-top: 0;
+  font-size: 3.052rem;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 h2 {
-    font-family: cera pro;
+    font-size: 2.441rem;
     font-weight: bold;
-    font-size: 4.236rem;
-    font-style: normal;
-    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    line-height: 1.2em;
 }
 
 h3 {
-    font-family: cera pro;
+    font-size: 1.953rem;
     font-weight: bold;
-    font-size: 2.618rem;
     font-style: italic;
-    text-decoration: none;
     text-transform: capitalize;
-    letter-spacing: 0em;
-    line-height: 1.2em;
 }
 
-p, a, li, .value, input, .label, label{
-    font-family: cera pro;
-    font-weight: normal;
-    font-size: 1.618rem;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
+h4 {
+    font-size: 1.563rem;
+    text-transform: capitalize;
+}
+
+h5 {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+h4, h5 {
+    margin: 1rem 0;
+}
+
+.sml-txt {
+    font-size: 0.8em;
+}
+
+p, a, li, .value, .label{
+    font-size: 1rem;
     letter-spacing: .02rem;
     line-height: 1.6em;
-}
-
-.label, label {
-    font-size: 1rem;
-    text-transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
 }
 
 a {
@@ -211,6 +218,10 @@ a {
 
 a:hover {
     text-decoration-line: underline;
+}
+
+.label {
+    text-transform: uppercase;
 }
 
 .code {
@@ -228,4 +239,43 @@ a:hover {
     border-radius: 1rem;
     white-space: nowrap;
     margin: 1rem;
+}
+
+/* COMPONENTS */
+
+.button, button {
+    display: inline-block;
+    background: transparent;
+    border-width: 2px;
+    border-color: var(--charcoal);
+    border-style: solid;
+    border-radius: 300px;
+    padding: 0 48px;
+    color: var(--charcoal);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.button > h5, button > h5 {
+    margin: 1rem auto;
+}
+
+.button.light:hover, button.light:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: var(--white);
+    border-color: var(--white);
+    color: var(--blue);
+    -webkit-filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
+}
+
+.button.dark:hover, button.dark:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+    -webkit-filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
 }

@@ -1,58 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112591305-2"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<head>
 
-        gtag('config', 'UA-112591305-2');
-        </script>
+    <!-- ================== -->
+    <!-- ====== TAGS ====== -->
+    <!-- ================== -->
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112591305-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        <!-- favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-        <!-- app icon -->
-        <link rel="apple-touch-icon" type="image/png" href="/images/iOS.png">
-        <!-- design system -->
-        <link rel="stylesheet" type="text/css" href="/stylesheets/design-system.css">
-        <!-- master stylesheet -->
-        <link rel="stylesheet" type="text/css" href="/stylesheets/master.css">
+    gtag('config', 'UA-112591305-2');
+    </script>
 
-        <!-- animate on scroll -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-        <!-- <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
-        <script src="node_modules/aos/dist/aos.js"></script> 
-        <script>
-        import AOS from 'aos';
-        import 'aos/dist/aos.css';
-        AOS.init();
-        </script> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <!-- form -->
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-        <!-- scroll top -->
-        <script>
-        $(document).ready(function(){ 
-            $(window).scroll(function(){ 
-                if ($(this).scrollTop() > 100) { 
-                    $('#scroll').fadeIn();
-                } else { 
-                    $('#scroll').fadeOut(); 
-                } 
-            }); 
-            $('#scroll').click(function(){ 
-                $("html, body").animate({ scrollTop: 0 }, 600); 
-                return false;
-            }); 
-        });
-        </script>
+    <!-- ================= -->
+    <!-- ====== CDN ====== -->
+    <!-- ================= -->
 
-        <!-- page title -->
-        <title><%= title %></title>
+    <!-- animate on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+        <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- jQuery form validation -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+
+    <!-- axios form -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    
+    <!-- ================== -->
+    <!-- ===== CONCIO ===== -->
+    <!-- ================== -->
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <!-- app icon -->
+    <link rel="apple-touch-icon" type="image/png" href="/images/iOS.png">
+
+    <!-- design system -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/design-system.css">
+
+    <!-- master stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/master.css">
+
+
+    <!-- ================= -->
+    <!-- ==== SCRIPTS ==== -->
+    <!-- ================= -->
+
+    <!-- scroll top -->
+    <script>
+    $(document).ready(function(){ 
+        $(window).scroll(function(){ 
+            if ($(this).scrollTop() > 100) { 
+                $('#scroll').fadeIn();
+            } else { 
+                $('#scroll').fadeOut(); 
+            } 
+        }); 
+        $('#scroll').click(function(){ 
+            $("html, body").animate({ scrollTop: 0 }, 600); 
+            return false;
+        }); 
+    });
+    </script>
+
+    <!-- ================== -->
+    <!-- ====== INFO ====== -->
+    <!-- ================== -->
+
+    <!-- page title -->
+    <title><%= title %></title>

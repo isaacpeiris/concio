@@ -25,32 +25,6 @@
     max-width: 25vw;
 }
 
-#services-icons table td h2 {
-    font-size: 1.618rem;
-    color: var(--dark);
-    background-image: linear-gradient(180deg, transparent 65%, var(--yellow) 0);
-    background-size: 0 100%;
-    background-repeat: no-repeat;
-    text-decoration: none;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-}
-
-#services-icons table td a {
-    color: var(--dark);
-}
-
-#services-icons table td h2:hover {
-    background-size: 100% 100%;
-}
-
-@media screen and (max-width: 1070px) {
-    #services-icons table td h2:hover {
-        background-size: 0 100%;
-        transform: scale(1.1);
-    }
-}
-
 @media screen and (max-width: 720px) {
     #services-icons {
         display: none;
@@ -89,11 +63,5 @@
     .explainer-text {
         max-width: 100%;
         padding-left: 0;
-    }
-}
-
-@media screen and (max-width: 720px) {
-    .explainer-text h1 {
-        font-size: 4.236rem;;
     }
 }

@@ -1,11 +1,12 @@
 /* Full-width input fields */
 input[type=text], input[type=number] {
+  font-size: 1rem;
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background: var(--ash);
 }
 
 /* Add a background color when the inputs get focus */
@@ -14,27 +15,11 @@ input[type=text]:focus, input[type=number]:focus {
   outline: none;
 }
 
-#contactForm label {
-  font-size: 1.618rem;
-}
-
 #contactForm button {
   display: block;
-  margin: 4rem auto;
-  padding: 0 36px;
-  border: 1px solid var(--charcoal);
-  border-radius: 320px;
-  transition: all .4s ease;
-}
-
-#contactForm button:hover {
-  cursor: pointer;
-  border-color: var(--blue);
-  background: var(--blue);
-  color: var(--white);
+  margin: 2rem auto;
 }
 
 #contactForm p {
   text-align: center;
 }
-

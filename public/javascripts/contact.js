@@ -1,60 +1,61 @@
-// function modalExit(elem) {
-//     var a = document.getElementsByID('registration')
-//     for (i = 0; i < a.length; i++) {
-//         a[i].classList.remove('exit')
-//     }
-//     elem.classList.add('exit');
-// }
+$(document).ready(function () {
 
-// // Get the modal
-// var modal = document.getElementById('id01');
+  if (!localStorage.getItem('user')) {
+      // On mobile, make modal scrollable
+      $('body').addClass('modal-active');
 
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
+      // Initialise modal
+      $('#registration-modal').modal();
+      // Prevent ability to click out of it
+      $('#registration-modal').modal({dismissible: false});
+      // Show modal
+      $('#registration-modal').modal('open');
 
-// validate form
-$("#rego-form").validate({
-  errorElement: 'span',
-  errorClass: 'help-inline',
-  rules: {
-      firstname: "required",
-      lastname: "required",
-      company: "required",
-      phone: {
-        required: true,
-        number: true
-      },
-      email: {
-          required: true,
-          email: true
-      }
-  }
-});
+      // validate form
+      $("#rego-form").validate({
+          errorElement: 'span',
+          errorClass: 'help-inline',
+          rules: {
+              name: "required",
+              email: {
+                  required: true,
+                  email: true
+              },
+              school: "required",
+              position: {
+                  required: true
+              }
+          }
+      });
 
-window.onload = function() {
+      // On submit
+      $("#rego-form").submit(function(event) {
+          const valid = $("#rego-form").valid();
+          const recaptcha = $("#g-recaptcha-response").val();
 
-  // Check for LocalStorage support.
-  if (localStorage) {
-
-    // Add an event listener for form submissions
-    document.getElementById('contactForm').addEventListener('submit', function() {
-
-      // Get the value of the name field.
-      var name = document.getElementById('firstname').value;
-      // Save the name in localStorage.
-      localStorage.setItem('firstname', name);
-
-    });
-  }
-
-  var name = localStorage.getItem('name');
-  if (name != "undefined" || name != "null") {
-    document.getElementById('welcomeMessage').innerHTML = "Hello " + name + "!";
+          // If captcha invalid
+          if (recaptcha === "") {
+              event.preventDefault();
+              $('.g-recaptcha').addClass('invalid-captcha');
+              // If captcha valid but form invalid
+          } else if (recaptcha !== "" && !valid) {
+              $('.g-recaptcha').removeClass('invalid-captcha');
+              // Recaptcha and form both valid - submits form
+          } else if (recaptcha !== "" && valid) {
+              $('.g-recaptcha').removeClass('invalid-captcha');
+              const formValues = $('#rego-form').serializeArray().reduce(function(obj, item) {
+                  obj[item.name] = item.value;
+                  return obj;
+              }, {});
+              delete formValues['g-recaptcha-response'];
+              // Save users deets to local storage
+              localStorage.setItem('user', JSON.stringify(formValues));
+          }
+      });
   } else {
-    document.getElementById('welcomeMessage').innerHTML = "Hello!";
-  }
-}
+      // Get user object from local storage
+      const user = JSON.parse(window.localStorage.getItem('user'));
+      // Set user school in HTML
+      $('.userSchoolName').text(user['school']);
+    };
+});

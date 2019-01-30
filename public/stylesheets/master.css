@@ -224,6 +224,10 @@ nav a.login:hover {
     text-align: center;
 }
 
+.footer-inner a:hover {
+    text-decoration: none;
+}
+
 .footer-social-icons {
     display: inline-block;
 }
@@ -259,7 +263,6 @@ nav a.login:hover {
     color: var(--white);
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
-    font-size: 1.618rem;
 }
 
 .footer-contact a:hover {
@@ -282,7 +285,6 @@ nav a.login:hover {
     transition: all .4s ease;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-size: 1.4rem;
 }
 
 .footer-nav a:hover {
@@ -314,16 +316,6 @@ nav a.login:hover {
 
 .hero-content h1 {
     margin-bottom: 2rem;
-}
-
-.hero-content p {
-    font-size: 2.618rem;
-}
-
-@media screen and (max-width: 720px) {
-    h1 {
-        font-size: 4.236rem;
-    }
 }
 
 section.second {
