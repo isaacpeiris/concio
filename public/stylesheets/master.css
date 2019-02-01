@@ -5,15 +5,6 @@
 
 * {box-sizing: border-box}
 
-.tablink {
-    letter-spacing: 1px;
-    margin-left: 20px;
-    text-decoration: none;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-    display: inline;
-}
-
 #scroll {
     position:fixed;
     right:2%;
@@ -70,7 +61,7 @@
 }
 
 .header-nav ul li a:hover {
-    color: var(--yellow);
+    opacity: 0.8;
     cursor: pointer;
 }
 
@@ -133,7 +124,7 @@ svg#logo {
 }
 
 svg#logo:hover {
-    fill: var(--yellow)
+    opacity: 0.8;
 }
 
 .header-nav {
@@ -326,4 +317,10 @@ section.second {
 
 section#hero {
     margin: 0;
+}
+
+/* thankyou */
+
+.thankyou h4, .thankyou h5 {
+    text-transform: none;
 }
