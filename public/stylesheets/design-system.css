@@ -279,3 +279,7 @@ a:hover {
     -webkit-filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
     filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
 }
+
+:root {
+    --drop-shadow: drop-shadow(0 5px 5px rgba(0,0,0,.5));
+}
