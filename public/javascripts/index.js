@@ -1,31 +1,45 @@
+$(document).ready(function () {
 
-// $(document).ready(function() {
-//     $(window).scroll(function() {
-//       var element = document.getElementById('banner')
-//       if($(this).scrollTop() = 0) { 
-//           $(element.style.transform = "skewY(-4deg)");
-//       } if($(this).scrollTop() = 100) { 
-//         $(element.style.transform = "skewY(0deg)");
-//       }
-//     });
-// });
-
-// function scrollSkew {
-//     var element = document.getElementById("banner");
-//     if (element.scrollTop = 0) {
-//         element.style.transform = "skewY(-4deg";
-//     }
-//     else {
-//         element.style.transform = "skewY(0deg)";
-//     }
-// }
-
-// o.a.createElement("rect",{stroke:"#FADB14",strokeWidth:"1.6",width:"9",height:"9"}),
-// o.a.createElement(u.a,{location:"banner",className:"banner-bg",animation:{playScale:[1,1.5],rotate:0}}),
-// o.a.createElement(l.a,{className:"".concat(t," page"),type:"alpha",delay:150})
-
-// if (!localStorage.getItem('user')) {
-//     document.getElementsByClassName('.contactForm').style.display = "block";
-// } else {
-//     document.getElementsByClassName('.contactForm').style.display = "none";
-// }
+    if (!localStorage.getItem('user')) {
+        // validate form
+        $("#contactForm").validate({
+            errorElement: 'span',
+            errorClass: 'help-inline',
+            rules: {
+                firstname: "required",
+                lastname: "required",
+                company: "required",
+                phone: {
+                    required: false,
+                    number: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                }
+            }
+        });
+  
+        // On submit
+        $("#contactForm").submit(function(event) {
+            const valid = $("#contactForm").valid();
+  
+            // If captcha invalid
+            if (valid) {
+                const formValues = $('#contactForm').serializeArray().reduce(function(obj, item) {
+                    obj[item.name] = item.value;
+                    return obj;
+                }, {});
+                // Save users deets to local storage
+                localStorage.setItem('user', JSON.stringify(formValues));
+            }
+        });
+    } else {
+        // Get user object from local storage
+        const user = JSON.parse(window.localStorage.getItem('user'));
+        // Set user info in HTML
+        $('.userFirstName').text(user['firstname']);
+        $('.userLastName').text(user['lastname']);
+        $('.userCompany').text(user['company']);
+      };
+  });
