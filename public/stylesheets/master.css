@@ -333,8 +333,22 @@ section#hero {
     margin: 0;
 }
 
+section.last {
+    margin-bottom: 0;
+}
+
 /* thankyou */
 
 .thankyou h4, .thankyou h5 {
     text-transform: none;
+}
+
+/* resources */
+
+.second .inner {
+    padding-top: 0;
+}
+
+.second .inner h3 {
+    margin-bottom: 1rem;
 }

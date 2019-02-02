@@ -23,3 +23,9 @@
 // o.a.createElement("rect",{stroke:"#FADB14",strokeWidth:"1.6",width:"9",height:"9"}),
 // o.a.createElement(u.a,{location:"banner",className:"banner-bg",animation:{playScale:[1,1.5],rotate:0}}),
 // o.a.createElement(l.a,{className:"".concat(t," page"),type:"alpha",delay:150})
+
+// if (!localStorage.getItem('user')) {
+//     document.getElementsByClassName('.contactForm').style.display = "block";
+// } else {
+//     document.getElementsByClassName('.contactForm').style.display = "none";
+// }

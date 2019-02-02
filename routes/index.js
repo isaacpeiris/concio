@@ -31,12 +31,14 @@ router.get('/privacy', function(req, res, next) {
 
 // passion projects
 
-router.get('/mentalhealth', function(req, res, next) {
-  res.render('pages/passionprojects/mentalhealth', { title: 'Concio Group | Mental Health' });
+router.get('/resources/mental-health', function(req, res, next) {
+  res.render('pages/passion-projects/mental-health-resources', { title: 'Concio Group | Mental Health Resources' });
 });
 
-router.get('/genderequality', function(req, res, next) {
-  res.render('pages/passionprojects/genderequality', { title: 'Concio Group | Gender Equality' });
+// events
+
+router.get('/workshops/mental-health', function(req, res, next) {
+  res.render('pages/events/mental-health-workshop', { title: 'Concio Group | Mental Health Resources' });
 });
 
 // other
