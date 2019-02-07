@@ -47,7 +47,7 @@ router.get('/thankyou', function(req, res, next) {
   res.render('pages/thankyou', { title: 'Concio Group | Toolkit' });
 });
 
-// FORM
+// // FORM
 
 const axios = require('axios');
 
@@ -68,7 +68,7 @@ router.post('/', (req, res) => {
     };
 
     // Send Slack message to team
-    axios.post('https://hooks.slack.com/services/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',
+    axios.post('',
         {
             "text": "New contact from the website 🔥",
             "attachments": [
@@ -113,7 +113,5 @@ router.post('/', (req, res) => {
 
     res.redirect('/thankyou');
 });
-
-module.exports = router;
 
 module.exports = router;
