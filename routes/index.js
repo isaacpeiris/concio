@@ -68,7 +68,7 @@ router.post('/', (req, res) => {
     };
 
     // Send Slack message to team
-    axios.post('',
+    axios.post('https://hooks.slack.com/services/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',
         {
             "text": "New contact from the website 🔥",
             "attachments": [
