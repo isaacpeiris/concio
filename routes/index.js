@@ -43,10 +43,6 @@ router.get('/workshops/mental-health', function(req, res, next) {
 
 // other
 
-router.get('/login', function(req, res, next) {
-  res.render('pages/login', { title: 'Concio Group | Login' });
-});
-
 router.get('/thankyou', function(req, res, next) {
   res.render('pages/thankyou', { title: 'Concio Group | Toolkit' });
 });
@@ -72,7 +68,7 @@ router.post('/', (req, res) => {
     };
 
     // Send Slack message to team
-    axios.post('https://hooks.slack.com/services/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',
+    axios.post('https://hooks.slack.com/services/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',
         {
             "text": "New contact from the website 🔥",
             "attachments": [

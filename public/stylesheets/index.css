@@ -116,8 +116,8 @@ h1 {
 .team-content img, .team-content .overlay, .team-content .profile-container {
     width: 16vw;
     height: 16vw;
-    max-width: 320px;
-    max-height: 320px;
+    max-width: 240px;
+    max-height: 240px;
     border-radius: 50%;
 }
 
