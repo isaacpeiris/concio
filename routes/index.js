@@ -29,10 +29,10 @@ router.get('/privacy', function(req, res, next) {
   res.render('pages/privacy', { title: 'Concio Group | Privacy' });
 });
 
-// passion projects
+// resources
 
 router.get('/resources/mental-health', function(req, res, next) {
-  res.render('pages/passion-projects/mental-health-resources', { title: 'Concio Group | Mental Health Resources' });
+  res.render('pages/resources/mental-health-resources', { title: 'Concio Group | Mental Health Resources' });
 });
 
 // events
@@ -44,7 +44,7 @@ router.get('/workshops/mental-health', function(req, res, next) {
 // other
 
 router.get('/thankyou', function(req, res, next) {
-  res.render('pages/thankyou', { title: 'Concio Group | Toolkit' });
+  res.render('pages/thankyou', { title: 'Concio Group | Thank You' });
 });
 
 // // FORM
