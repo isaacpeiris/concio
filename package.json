@@ -17,8 +17,7 @@
     "express": "~4.16.0",
     "express-session": "^1.15.6",
     "mime": "^2.2.0",
-    "morgan": "~1.9.0",
-    "shufflejs": "^5.2.1"
+    "morgan": "~1.9.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
