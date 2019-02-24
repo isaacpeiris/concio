@@ -47,10 +47,6 @@ router.get('/blog', function(req, res, next) {
   res.render('blog', { title: 'Concio Group | Insights' });
 });
 
-router.get('/blog/social-enterprise', function(req, res, next) {
-  res.render('blog/social-enterprise', { title: 'Concio Group | Youth Week 2018 Social Enterprise Competition' });
-});
-
 // other
 
 router.get('/thankyou', function(req, res, next) {
