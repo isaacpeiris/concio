@@ -35,12 +35,6 @@ router.get('/resources/mental-health', function(req, res, next) {
   res.render('pages/resources/mental-health-resources', { title: 'Concio Group | Mental Health Resources' });
 });
 
-// blog
-
-router.get('/blog/social-enterprise', function(req, res, next) {
-  res.render('blog/social-enterprise', { title: 'Concio Group' });
-});
-
 // other
 
 router.get('/thankyou', function(req, res, next) {
