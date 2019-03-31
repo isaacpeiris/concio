@@ -44,6 +44,10 @@ section {
     margin-bottom: 0.1rem;
 }
 
+.content h3 {
+    margin: 1em 0 0.5em 0;
+}
+
 .content a {
     color: var(--blue);
 }
