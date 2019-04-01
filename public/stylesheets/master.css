@@ -244,8 +244,8 @@ nav a.login:hover {
     transition: all .4s ease;
 }
 
-.footer-social-icons #instagram {
-    padding: 0 20px;
+.footer-social-icons td {
+    padding: 0 12px;
 }
 
 .footer-social-icons #facebook svg:hover {
