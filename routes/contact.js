@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const router = express.Router();
 const flash = require('connect-flash');
-const axios = require('axios');
+const axios = require('axios').default;
 
 //Add header to all axios requests
 axios.defaults.headers.common['Content-type'] = 'application/json';
@@ -21,9 +21,9 @@ router.post('/', (req, res) => {
     };
 
     // Send Slack message to team
-    axios.post('https://hooks.slack.com/services/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',
+    axios.post('https://hooks.slack.com/services/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',
         {
-            "text": "New contact from the website 🔥",
+            "text": "New Concio contact 🔥",
             "attachments": [
                 {
                     "fields": [
@@ -56,15 +56,10 @@ router.post('/', (req, res) => {
                 }
             ]
         })
-        .then(res => {
-
-        })
         .catch(err => {
             throw new Error(err);
         });
-
-
-    res.redirect('/thankyou');
+        res.redirect('/thankyou');
 });
 
 module.exports = router;
