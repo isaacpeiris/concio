@@ -296,6 +296,14 @@ nav a.login:hover {
     color: var(--light-blue);
 }
 
+.footer-attribution a {
+	color: var(--white);
+}
+
+.footer-attribution a:hover {
+	color: var(--yellow);
+}
+
 /* hero */
 
 #hero {
