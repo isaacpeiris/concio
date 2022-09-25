@@ -85,3 +85,6 @@
 
     <!-- page title -->
     <title><%= title %></title>
+	<% if (locals.description) { %>
+		<meta name="description" content="<%= description %>">
+	<% } %>

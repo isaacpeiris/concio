@@ -4,17 +4,26 @@ var router = express.Router();
 // index
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Concio Group' });
+  	res.render('index', {
+		title: 'Concio Group',
+		description: 'Concio is a creative intelligence agency helping teams access untapped creative potential and overcome blocks in creative processes through innovation methodologies.'
+	});
 });
 
 // pages
 
 router.get('/about', function(req, res, next) {
-  res.render('pages/about', { title: 'Concio Group | About Us' });
+  	res.render('pages/about', {
+		title: 'Concio Group | About Us',
+		description: 'Founded in 2017 on the principle of pursuing positive impact, Concio facilitates new and exciting opportunities for organisations and teams. We can help you access untapped creative potential and overcome blocks in creative processes with higher engagement and lower costs than alternative methods.'
+	});
 });
 
 router.get('/services', function(req, res, next) {
-  res.render('pages/services', { title: 'Concio Group | Services' });
+  res.render('pages/services', {
+	title: 'Concio Group | Services',
+	description: 'Concio offers a variety of workshops which we are proud to have delivered to such a broad variety of clients, from a UN-affiliated legal services firm to one of the largest hotel groups in the world to a local University medical research team.'
+});
 });
 
 router.get('/contact', function(req, res, next) {
@@ -47,10 +56,6 @@ const axios = require('axios');
 
 //Add header to all axios requests
 axios.defaults.headers.common['Content-type'] = 'application/json';
-
-router.get('/', (req, res) => {
-    res.render('index');
-});
 
 router.post('/', (req, res) => {
     const user = {
