@@ -10,16 +10,17 @@
 /* ====== */
 
 :root {
-    --light-blue: #05b2dc;
-    --blue: #087ca7;
-    --dark-blue: #033860;
-    --yellow: #ffdc00;
-    --charcoal: #303030;
-    --ash: #f0f0f0;
-    --white: #ffffff;
-    --facebook: #3b5998;
-    --instagram: #bc2a8d;
-    --linkedin: #007bb5;
+	--light-blue: #05b2dc;
+	--blue: #087ca7;
+	--dark-blue: #033860;
+	--yellow: #ffdc00;
+	--charcoal: #303030;
+	--ash: #f0f0f0;
+	--white: #ffffff;
+	--facebook: #3b5998;
+	--instagram: #bc2a8d;
+	--linkedin: #007bb5;
+	--font: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @-webkit-keyframes Gradient {
@@ -64,42 +65,42 @@
 
 /* root */
 body {
-    margin: 0px;
-    height: 100%;
+	margin: 0px;
+	height: 100%;
 }
 
 hr {
-    width: 80%;
-    height: 1px;
-    background-color: var(--charcoal);
-    border: none;
-    margin: 2rem auto;
+	width: 80%;
+	height: 1px;
+	background-color: var(--charcoal);
+	border: none;
+	margin: 2rem auto;
 }
 
 .spacer {
-    height: 48px;
+	height: 48px;
 }
 
 /* structure */
 section {
-    margin: 4% 0 4% 0;
+	margin: 4% 0 4% 0;
 }
 
 .container {
-    display: block;
-    margin: auto;
-    width: 80%;
-    max-width: 1200px;
+	display: block;
+	margin: auto;
+	width: 80%;
+	max-width: 1200px;
 }
 
 @media screen and (max-width: 720px) {
-    .container {
-        width: 96%;
-    }
+	.container {
+		width: 96%;
+	}
 }
 
 .inner {
-    padding: 48px;
+	padding: 48px;
 }
 
 .content {
@@ -107,182 +108,155 @@ section {
 }
 
 .flex-container {
-    display: flex;
-    justify-content: space-evenly;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .flex-inner {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
 }
 
 .flex-item {
-    flex: 1 0 0;
+	flex: 1 0 0;
 }
 
 /* ========== */
 /* TYPOGRAPHY */
 /* ========== */
-
-/* fonts */
-@font-face {
-    src: url(/fonts/cera-pro/Cera-Pro-Regular.otf);
-    font-family: "Cera Pro";
-    font-weight: normal;
-}
-
-@font-face {
-    src: url(/fonts/cera-pro/Cera-Pro-Bold.otf);
-    font-family: "Cera Pro";
-    font-weight: bold;
-}
-
-@font-face {
-    src: url(/fonts/cera-pro/Cera-Pro-Bold-Italic.otf);
-    font-family: "Cera Pro";
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    src: url(/fonts/cera-pro/Cera-Pro-Black.otf);
-    font-family: "Cera Pro";
-    font-weight: 900;
-}
-
 /* styling */
 body {
-    font-family: "Cera Pro", "Montserrat", sans-serif;
-    line-height: 1.2em;
-    color: var(--charcoal);
+	font-family: var(--font, sans-serif);
+	line-height: 1.2em;
+	color: var(--charcoal);
 }
 
 p {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 h1, h2, h3, h4, h5 {
-  font-weight: 400;
-  line-height: 1.2;
-  margin-top: 0;
+	font-weight: 400;
+	line-height: 1.2;
+	margin-top: 0;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 3.052rem;
-  font-weight: bold;
-  text-transform: capitalize;
+	margin-top: 0;
+	font-size: 3.052rem;
+	font-weight: 600;
+	text-transform: capitalize;
 }
 
 h2 {
-    font-size: 2.441rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+	font-size: 2.441rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }
 
 h3 {
-    font-size: 1.953rem;
-    font-weight: bold;
-    font-style: italic;
-    text-transform: capitalize;
+	font-size: 1.953rem;
+	font-weight: 600;
+	font-style: italic;
+	text-transform: capitalize;
 }
 
 h4 {
-    font-size: 1.563rem;
-    text-transform: capitalize;
+	font-size: 1.563rem;
+	text-transform: capitalize;
 }
 
 h5 {
-    font-size: 1.25rem;
-    text-transform: capitalize;
+	font-size: 1.25rem;
+	text-transform: capitalize;
 }
 
 h4, h5 {
-    margin: 1rem 0;
+	margin: 1rem 0;
 }
 
 .sml-txt {
-    font-size: 0.8em;
+	font-size: 0.8em;
 }
 
 p, a, li, .value, .label{
-    font-size: 1rem;
-    letter-spacing: .02rem;
-    line-height: 1.6em;
-    font-style: normal;
-    text-decoration: none;
+	font-size: 1rem;
+	letter-spacing: .02rem;
+	line-height: 1.6em;
+	font-style: normal;
+	text-decoration: none;
 }
 
 a {
-    color: var(--blue);
+	color: var(--blue);
 }
 
 a:hover {
-    text-decoration-line: underline;
+	text-decoration-line: underline;
 }
 
 .label {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .code {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: normal;
-    font-size: 1.618rem;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: lowercase;
-    letter-spacing: .02rem;
-    line-height: 1.6em;
-    padding: 1rem;
-    color: var(--charcoal);
-    background: var(--ash);
-    border-radius: 1rem;
-    white-space: nowrap;
-    margin: 1rem;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: normal;
+	font-size: 1.618rem;
+	font-style: normal;
+	text-decoration: none;
+	text-transform: lowercase;
+	letter-spacing: .02rem;
+	line-height: 1.6em;
+	padding: 1rem;
+	color: var(--charcoal);
+	background: var(--ash);
+	border-radius: 1rem;
+	white-space: nowrap;
+	margin: 1rem;
 }
 
 /* COMPONENTS */
 
 .button, button {
-    display: inline-block;
-    background: transparent;
-    border-width: 2px;
-    border-color: var(--charcoal);
-    border-style: solid;
-    border-radius: 300px;
-    padding: 0 48px;
-    color: var(--charcoal);
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+	display: inline-block;
+	background: transparent;
+	border-width: 2px;
+	border-color: var(--charcoal);
+	border-style: solid;
+	border-radius: 300px;
+	padding: 0 48px;
+	color: var(--charcoal);
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
 }
 
 .button > h5, button > h5 {
-    margin: 1rem auto;
+	margin: 1rem auto;
 }
 
 .button.light:hover, button.light:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    background: var(--white);
-    border-color: var(--white);
-    color: var(--blue);
-    -webkit-filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
+	cursor: pointer;
+	transform: scale(1.1);
+	background: var(--white);
+	border-color: var(--white);
+	color: var(--blue);
+	-webkit-filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
+	filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
 }
 
 .button.dark:hover, button.dark:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    background: var(--blue);
-    border-color: var(--blue);
-    color: var(--white);
-    -webkit-filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
+	cursor: pointer;
+	transform: scale(1.1);
+	background: var(--blue);
+	border-color: var(--blue);
+	color: var(--white);
+	-webkit-filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
+	filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
 }
 
 :root {
-    --drop-shadow: drop-shadow(0 5px 5px rgba(0,0,0,.5));
+	--drop-shadow: drop-shadow(0 5px 5px rgba(0,0,0,.5));
 }

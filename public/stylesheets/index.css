@@ -1,276 +1,271 @@
 /* hero */
 
 #hero {
-    min-height: 100vh;
+	min-height: 100vh;
 }
 
 .hero-inner {
-    top: 50vh;
-    transform: translateY(-60%);
+	top: 50vh;
+	transform: translateY(-60%);
 }
 
 #hero h4 {
-    text-transform: none;
+	text-transform: none;
 }
 
 /* services */
 
 #services {
-    text-align: center;
-    color: var(--charcoal);
+	text-align: center;
+	color: var(--charcoal);
 }
 
 .service-content {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
 }
 
 .service-content img, .service-content .profile-container {
-    width: 12vw;
-    height: 12vw;
-    max-width: 320px;
-    max-height: 320px;
+	width: 12vw;
+	height: 12vw;
+	max-width: 320px;
+	max-height: 320px;
 }
 
 @media screen and (max-width: 720px) {
-    .service-content img, .service-content .profile-container {
-        width: 60vw;
-        height: 60vw;
-    }
-    .service-content {
-        display: block;
-    }
-    .service-container {
-        margin: auto;
-        margin-bottom: 12%;
-    }
+	.service-content img, .service-content .profile-container {
+		width: 60vw;
+		height: 60vw;
+	}
+	.service-content {
+		display: block;
+	}
+	.service-container {
+		margin: auto;
+		margin-bottom: 12%;
+	}
 }
 
 .service-container {
-    margin-top: 3rem;
+	margin-top: 3rem;
 }
 
 .service-image {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: auto;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: auto;
 }
 
 .service-content .label {
-    margin-top: 3rem;
-}
-
-/* get in touch */
-
-#contact {
-    background: var(--yellow);
-    transform: skewY(8deg)
-}
-
-#contact .inner {
-    padding: 72px 48px;
-    text-align: center;
-    transform: skewY(-8deg)
+	margin-top: 3rem;
 }
 
 /* about us */
 
+#about {
+	background: var(--yellow);
+	transform: skewY(8deg)
+}
+
 #about .inner {
-    color: var(--charcoal);
+	padding: 72px 48px;
+	text-align: center;
+	transform: skewY(-8deg);
+	color: var(--charcoal)
 }
 
 .about-text {
-    width: 72%;
-    display: block;
-    margin: auto;
-    padding: 1em 0 1em 0;
+	width: 72%;
+	display: block;
+	margin: auto;
+	padding: 1em 0 1em 0;
 }
 
 h1 {
-    text-align: center;
-    margin: 0;
+	text-align: center;
+	margin: 0;
 }
 
 .team {
-    text-align: center;
+	text-align: center;
 }
 
 .team-content {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
 }
 
 .team-content a {
-    border-radius: 50%;
+	border-radius: 50%;
 }
 
 .team-content img {
-            filter: grayscale(100);
-    -webkit-filter: grayscale(100);
-    transition: all .4s ease;
+	filter: grayscale(100);
+	-webkit-filter: grayscale(100);
+	transition: all .4s ease;
 }
 
 .team-content img, .team-content .overlay, .team-content .profile-container {
-    width: 16vw;
-    height: 16vw;
-    max-width: 240px;
-    max-height: 240px;
-    border-radius: 50%;
+	width: 16vw;
+	height: 16vw;
+	max-width: 240px;
+	max-height: 240px;
+	border-radius: 50%;
 }
 
 @media screen and (max-width: 720px) {
-    .team-content img, .team-content .overlay, .team-content .profile-container {
-        width: 60vw;
-        height: 60vw;
-    }
-    .team-content {
-        display: block;
-    }
-    .team-content .profile-container {
-        margin: 6% auto;
-    }
+	.team-content img, .team-content .overlay, .team-content .profile-container {
+		width: 60vw;
+		height: 60vw;
+	}
+	.team-content {
+		display: block;
+	}
+	.team-content .profile-container {
+		margin: 6% auto;
+	}
 }
 
 .profile-container {
-    position: relative;
-    width: 50%;
+	position: relative;
+	width: 50%;
 }
 
 .profile-image {
-    display: block;
-    width: 100%;
-    height: auto;
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .4s ease;
-    background-color: var(--blue);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .4s ease;
+	background-color: var(--blue);
 }
 
 .profile-container:hover .overlay, .profile-container:focus .overlay, .profile-container:active .overlay {
-    opacity: 0.8;
+	opacity: 0.8;
 }
 
 
 .text {
-    color: var(--white);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    text-align: center;
+	color: var(--white);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 .overlay .text h3 {
-    margin: 1rem;
+	margin: 1rem;
 }
 
 .overlay .text svg#linkedin {
-    height: 24px;
-    fill: #ffffff;
-    transition: all .2s ease;
+	height: 24px;
+	fill: #ffffff;
+	transition: all .2s ease;
 }
 
 .overlay .text svg#linkedin:hover {
-    transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 /* redesign */
 
 #hero {
-    background: transparent;
+	background: transparent;
 }
 
 .hero-background {
-    z-index: -10;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-transform: skewY(-8deg) translateY(calc(-50vw * 0.140540834702391446838117693432814135673187275174772297540));
-            transform: skewY(-8deg) translateY(calc(-50vw * 0.140540834702391446838117693432814135673187275174772297540));
-    background: linear-gradient(-45deg, var(--light-blue), var(--blue), var(--dark-blue));
+	z-index: -10;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: skewY(-8deg) translateY(calc(-50vw * 0.140540834702391446838117693432814135673187275174772297540));
+	transform: skewY(-8deg) translateY(calc(-50vw * 0.140540834702391446838117693432814135673187275174772297540));
+	background: linear-gradient(-45deg, var(--light-blue), var(--blue), var(--dark-blue));
 	background-size: 600% 600%;
 	-webkit-animation: Gradient 6s ease infinite;
-	   -moz-animation: Gradient 6s ease infinite;
-            animation: Gradient 6s ease infinite;
+	-moz-animation: Gradient 6s ease infinite;
+	animation: Gradient 6s ease infinite;
 }
 
 /* Full-width input fields */
 input[type=text], input[type=number] {
-    font-size: 1rem;
-    width: 80%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: var(--white);
+	font-size: 1rem;
+	width: 80%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: var(--white);
 }
   
 /* Add a background color when the inputs get focus */
 input[type=text]:focus, input[type=number]:focus {
-    background-color: var(--ash);
-    outline: none;
+	background-color: var(--ash);
+	outline: none;
 }
   
 #contactForm button {
-    display: block;
-    margin: 2rem auto;
+	display: block;
+	margin: 2rem auto;
 }
   
 #contactForm p {
-    text-align: center;
+	text-align: center;
 }
 
 /* recent */
 
 .recent-work {
-    width: 100%;
-    max-height: 320px;
-    max-width: 1200px;
-    background: var(--ash);
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    position: relative;
+	width: 100%;
+	max-height: 320px;
+	max-width: 1200px;
+	background: var(--ash);
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	margin: auto;
+	position: relative;
 }
 
 .recent-work img {
-    width: 100%;
+	width: 100%;
 }
 
 .recent-overlay {
-    opacity: 0;
-    background: var(--blue);
-    color: var(--white);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    transition: all .4s ease;
-    display: flex;
-    align-items: center;
+	opacity: 0;
+	background: var(--blue);
+	color: var(--white);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	transition: all .4s ease;
+	display: flex;
+	align-items: center;
 }
 
 .recent-work:hover .recent-overlay {
-    opacity: 0.8;
+	opacity: 0.8;
 }
 
 .recent-work hr {
-    background: var(--white);
-    margin-left: 0;
+	background: var(--white);
+	margin-left: 0;
 }
