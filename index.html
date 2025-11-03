@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- ================= -->
+    <!-- ====== CDN ====== -->
+    <!-- ================= -->
+
+    <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<!-- Google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    
+    <!-- ================== -->
+    <!-- ===== CONCIO ===== -->
+    <!-- ================== -->
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- app icon -->
+    <link rel="apple-touch-icon" type="image/png" href="assets/images/iOS.png">
+
+    <!-- design system -->
+    <link rel="stylesheet" type="text/css" href="assets/css/design-system.css">
+
+    <!-- master stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/master.css">
+    
+    <!-- master javascript -->
+    <script type="text/javascript" src="assets/js/master.js"></script>
+
+
+    <!-- ================= -->
+    <!-- ==== SCRIPTS ==== -->
+    <!-- ================= -->
+
+    <!-- scroll top -->
+    <script>
+    $(document).ready(function(){ 
+        $(window).scroll(function(){ 
+            if ($(this).scrollTop() > 100) { 
+                $('#scroll').fadeIn();
+            } else { 
+                $('#scroll').fadeOut(); 
+            } 
+        }); 
+        $('#scroll').click(function(){ 
+            $("html, body").animate({ scrollTop: 0 }, 600); 
+            return false;
+        }); 
+    });
+    </script>
+
+    <!-- ================== -->
+    <!-- ====== INFO ====== -->
+    <!-- ================== -->
+	<title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <script type="text/javascript" src="assets/js/index.js"></script>
+
+</head>
+<body>
+	<header class="header">
+    <div class="branding">
+        <a href="index.html">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2187 400"><title>CONCIO</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_8" data-name="Layer 8"><path class="cls-1" d="M1987,0c-110.46,0-200,89.54-200,200s89.54,200,200,200,200-89.54,200-200S2097.46,0,1987,0Zm0,300a100,100,0,1,1,100-100A100,100,0,0,1,1987,300Z"/><path class="cls-1" d="M1649.5,0h0a100,100,0,0,1,100,100V400a0,0,0,0,1,0,0h0a100,100,0,0,1-100-100V0A0,0,0,0,1,1649.5,0Z"/><path class="cls-1" d="M1492,276.85A99.63,99.63,0,0,1,1426.58,300c-53.86-.75-97.82-44.71-98.57-98.57a100,100,0,0,1,163.6-78.58c35.13,29,86.3,27.25,118.5-5l.21-.21A200,200,0,0,0,1428,0c-110.78,0-201.64,92.3-200,203.07,1.64,109,90.55,196.93,200,196.93a200,200,0,0,0,182.32-117.68h0A87.85,87.85,0,0,0,1492,276.85Z"/><path class="cls-1" d="M1089,0h0V204.59L939.5,0h-100V300a100,100,0,0,0,100,100h0V193.24L1089,400h100V100A100,100,0,0,0,1089,0Z"/><path class="cls-1" d="M602,0C491.54,0,402,89.54,402,200s89.54,200,200,200,200-89.54,200-200S712.46,0,602,0Zm0,300A100,100,0,1,1,702,200,100,100,0,0,1,602,300Z"/><path class="cls-1" d="M264,276.85A99.63,99.63,0,0,1,198.58,300c-53.86-.75-97.82-44.71-98.57-98.57a100,100,0,0,1,163.6-78.58c35.13,29,86.3,27.25,118.5-5l.21-.21A200,200,0,0,0,200,0C89.22,0-1.64,92.3,0,203.07,1.66,312.11,90.57,400,200,400A200,200,0,0,0,382.32,282.32h0A87.85,87.85,0,0,0,264,276.85Z"/></g></g></svg>
+        </a>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+    </nav>
+    <div id="mySidenav" class="mobile-sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+    </div>
+    <span class="mobile-nav" style="font-size:32px; cursor: pointer; color: var(--white)" onclick="openNav()">&#9776;</span>
+</header>
+
+	<main>
+
+<section id="hero">
+    <div class="hero-inner inner">
+        <div class="hero-content">
+            <h1 data-aos="fade-up">A new perspective.</h1>
+            <h4 data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom">We are a creative intelligence agency creating positive change through innovation.</h4>
+        </div>
+    </div>
+    <div class="hero-background"></div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <div class="inner">
+            <div class="content">
+                <h1 data-aos="fade-up">Services</h1>
+                <hr data-aos="fade-up">
+                <div class="service-content">
+                    <div class="service-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/images/svg/shifting-perspectives.svg" alt="Shifting Perspectives" class="service-image">
+                        <h4>shifting perspectives</h4>
+                    </div>
+                    <div class="service-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/images/svg/design-sprint.svg" alt="Design Sprint" class="service-image">
+                        <h4>design sprint</h4>
+                    </div>
+                    <div class="service-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/images/svg/strategic-innovation.svg" alt="Solution Design" class="service-image">
+                        <h4>strategic innovation</h4>
+                    </div>
+                    <div class="service-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/images/svg/solution-design.svg" alt="Solution Design" class="service-image">
+                        <h4>solution design</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" class="inner">
+            <a href="/services">
+                <div class="button dark">
+                    <h5>Learn More</h5>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="last">
+    <div class="container">
+        <div class="inner">
+            <div class="content">
+                <h1>The Team</h1>
+                <hr>
+                <div class="team-content">
+                    <div class="profile-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/images/profiles/emma.png" alt="Emma McCulloch" class="profile-image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Emma McCulloch</h3>
+                                <a href="https://www.linkedin.com/in/em-mcculloch/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 47.78" id="linkedin"><title>linkedin</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M50,29.29V47.78H39.28V30.53c0-4.33-1.55-7.29-5.43-7.29a5.84,5.84,0,0,0-5.49,3.92A7.17,7.17,0,0,0,28,29.77v18H17.28s.14-29.21,0-32.24H28v4.57l-.07.1H28v-.1a10.65,10.65,0,0,1,9.66-5.33C44.71,14.78,50,19.39,50,29.29ZM6.07,0C2.4,0,0,2.41,0,5.57a5.55,5.55,0,0,0,5.92,5.57H6c3.73,0,6.06-2.48,6.06-5.57S9.73,0,6.07,0ZM.64,47.78H11.35V15.54H.64Z"/></g></g></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/images/profiles/isaac.jpg" alt="Isaac Peiris" class="profile-image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Isaac Peiris</h3>
+                                <a href="https://www.linkedin.com/in/isaacpeiris/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 47.78" id="linkedin"><title>linkedin</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M50,29.29V47.78H39.28V30.53c0-4.33-1.55-7.29-5.43-7.29a5.84,5.84,0,0,0-5.49,3.92A7.17,7.17,0,0,0,28,29.77v18H17.28s.14-29.21,0-32.24H28v4.57l-.07.1H28v-.1a10.65,10.65,0,0,1,9.66-5.33C44.71,14.78,50,19.39,50,29.29ZM6.07,0C2.4,0,0,2.41,0,5.57a5.55,5.55,0,0,0,5.92,5.57H6c3.73,0,6.06-2.48,6.06-5.57S9.73,0,6.07,0ZM.64,47.78H11.35V15.54H.64Z"/></g></g></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/images/profiles/lucy.jpeg" alt="Lucy Southwick" class="profile-image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Lucy Southwick</h3>
+                                <a href="https://www.linkedin.com/in/lucy-southwick-aa5946116/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 47.78" id="linkedin"><title>linkedin</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M50,29.29V47.78H39.28V30.53c0-4.33-1.55-7.29-5.43-7.29a5.84,5.84,0,0,0-5.49,3.92A7.17,7.17,0,0,0,28,29.77v18H17.28s.14-29.21,0-32.24H28v4.57l-.07.1H28v-.1a10.65,10.65,0,0,1,9.66-5.33C44.71,14.78,50,19.39,50,29.29ZM6.07,0C2.4,0,0,2.41,0,5.57a5.55,5.55,0,0,0,5.92,5.57H6c3.73,0,6.06-2.48,6.06-5.57S9.73,0,6.07,0ZM.64,47.78H11.35V15.54H.64Z"/></g></g></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-container" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/images/profiles/remy.jpeg" alt="Remy Webb" class="profile-image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Remy Webb</h3>
+                                <a href="https://www.linkedin.com/in/remy-webb-084b9a11a/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 47.78" id="linkedin"><title>linkedin</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M50,29.29V47.78H39.28V30.53c0-4.33-1.55-7.29-5.43-7.29a5.84,5.84,0,0,0-5.49,3.92A7.17,7.17,0,0,0,28,29.77v18H17.28s.14-29.21,0-32.24H28v4.57l-.07.1H28v-.1a10.65,10.65,0,0,1,9.66-5.33C44.71,14.78,50,19.39,50,29.29ZM6.07,0C2.4,0,0,2.41,0,5.57a5.55,5.55,0,0,0,5.92,5.57H6c3.73,0,6.06-2.48,6.06-5.57S9.73,0,6.07,0ZM.64,47.78H11.35V15.54H.64Z"/></g></g></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <table class="footer-social-icons">
+            <tr>
+                <td id="facebook">
+                    <a href="https://www.facebook.com/conciogroup/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.33 50"><title>facebook</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M5,9.68v6.89H0V25H5V50H15.4V25h7s.65-4,1-8.45H15.44V10.78a2.45,2.45,0,0,1,2.25-2h5.64V0H15.66C4.79,0,5,8.43,5,9.68Z"/></g></g></svg>
+                    </a>
+                </td>
+                <td id="linkedin">
+                    <a href="https://www.linkedin.com/company/conciogroup/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 47.78"><title>linkedin</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="cls-1" d="M50,29.29V47.78H39.28V30.53c0-4.33-1.55-7.29-5.43-7.29a5.84,5.84,0,0,0-5.49,3.92A7.17,7.17,0,0,0,28,29.77v18H17.28s.14-29.21,0-32.24H28v4.57l-.07.1H28v-.1a10.65,10.65,0,0,1,9.66-5.33C44.71,14.78,50,19.39,50,29.29ZM6.07,0C2.4,0,0,2.41,0,5.57a5.55,5.55,0,0,0,5.92,5.57H6c3.73,0,6.06-2.48,6.06-5.57S9.73,0,6.07,0ZM.64,47.78H11.35V15.54H.64Z"/></g></g></svg>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <nav class="footer-nav">
+            <a href="/terms">Terms & Conditions</a>
+            <a href="/privacy">Privacy Policy</a>
+        </nav>
+        <div class="scroll-to-top">
+            <a href="#" id="scroll" style="display: none;"><span></span></a>
+        </div>
+        <br>
+        <div class="footer-copyright">
+            <p>© Concio Group <span class="currentYear"></span></p>
+        </div>
+		<div class="footer-attribution">
+			<p>Website by <a href="https://www.isaacpeiris.com/?utm_source=concio">Isaac Peiris</a></p>
+		</div>
+        <a href="#" id="scroll" style="display: none;"><span></span></a>
+    </div>
+</footer>
+
+<!-- Closing JS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+    duration: 1200,
+    delay: 200,
+    easing: 'ease-out-quart'
+    });
+</script>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+<script>
+  // Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
